@@ -1,4 +1,16 @@
 {
-   "Quản lí tin tức": "News Manage",
-    "Tiêu đề": "Title"
+    "Tiêu đề": "Title",
+    "Danh mục": "Category",
+    "Ảnh": "Image",
+    "Vị trí": "Position",
+    "Thứ tự": "Sort",
+    "Trạng thái": "Status",
+    "Thời gian tạo": "Created At",
+    "Thao tác": "Action",
+    "Bộ lọc":"Filter",
+    "Xin chào": "Hi",
+    "Xoá lựa chọn": "Delete selection",
+    "Thêm bản ghi": "Add Record",
+    "Từ": "Form",
+    "Đến": "To"
 }

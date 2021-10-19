@@ -21,7 +21,6 @@ class Language
         // Lấy dữ liệu lưu trong Session, không có thì trả về default lấy trong config
 
         config(['app.locale' => $language]);
-        aaa
         // Chuyển ứng dụng sang ngôn ngữ được chọn
 
         return $next($request);

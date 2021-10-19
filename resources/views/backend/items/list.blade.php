@@ -1,9 +1,8 @@
 @extends('layout.default')
 @section('content')
-
     <form action="{{route("$module.search")}}" method="GET" class="card">
         <div class="card-header">
-            <span>Bộ lọc</span>
+            <span>{{__('Bộ lọc')}}</span>
         </div>
         <div class="row card-body">
             <div class="col-3">
@@ -19,7 +18,7 @@
                     <div class="input-group-prepend">
                         <span class="input-group-text"><i class="far fa-calendar-times"></i></span>
                     </div>
-                    <input type="text" name="title" class="form-control" placeholder="Tiêu đề" value="{{$old_data['title'] ?? ''}}">
+                    <input type="text" name="title" class="form-control" placeholder="{{__('Tiêu đề')}}" value="{{$old_data['title'] ?? ''}}">
                 </div>
             </div>
             <div class="col-3">
@@ -55,14 +54,14 @@
                         <option @if(isset($old_data))@if($old_data['position']=='our_value_banner')selected @endif @endif>our_value_banner</option>
                     </select>
                     @else
-                        <input type="text" name="position" class="form-control" placeholder="Vị trí" value="{{$old_data['position'] ?? ''}}">
+                        <input type="text" name="position" class="form-control" placeholder="{{__('Vị trí')}}" value="{{$old_data['position'] ?? ''}}">
                     @endif
                 </div>
             </div>
             <div class="col-3 mt-3">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text">Từ</span>
+                        <span class="input-group-text">{{__('Từ')}}</span>
                     </div>
                     <input type="datetime-local" name="date_form" class="form-control" placeholder="Từ thời gian" value="{{$old_data['date_form'] ?? ''}}">
                 </div>
@@ -70,7 +69,7 @@
             <div class="col-3 mt-3">
                 <div class="input-group">
                     <div class="input-group-prepend">
-                        <span class="input-group-text">Đến</span>
+                        <span class="input-group-text">{{__('Đến')}}</span>
                     </div>
                     <input type="datetime-local" name="date_to" class="form-control" placeholder="đến đến" value="{{$old_data['date_to'] ?? ''}}">
                 </div>
@@ -97,7 +96,7 @@
                 <!--begin::Dropdown-->
                 <button type="button" class="btn btn-light-danger font-weight-bolder mr-5" data-toggle="modal"
                         data-target="#confirm_delete_all">
-                    <i class="far fa-trash-alt"></i>Delete All
+                    <i class="far fa-trash-alt"></i>{{__('Xoá lựa chọn')}}
                 </button>
                 <!--end::Dropdown-->
                 <div class="modal fade" id="confirm_delete_all" data-backdrop="static" tabindex="-1" role="dialog"
@@ -126,7 +125,7 @@
 
                 <!--begin::Button-->
                 <a href='{{route("$module.create")}}' class="btn btn-primary font-weight-bolder">
-                    <i class="la la-plus"></i>New Record</a>
+                    <i class="la la-plus"></i>{{__('Thêm bản ghi')}}</a>
                 <!--end::Button-->
             </div>
         </div>
@@ -138,14 +137,14 @@
                 <tr>
                     <th><input type="checkbox" id="master"></th>
                     <th>ID</th>
-                    <th>Tiêu đề</th>
-                    <th>Danh mục</th>
-                    <th>Ảnh</th>
-                    <th>Vị trí</th>
-                    <th>Thứ tự</th>
-                    <th>Trạng thái</th>
-                    <th>Thời gian tạo</th>
-                    <th>Thao tác</th>
+                    <th>{{__('Tiêu đề')}}</th>
+                    <th>{{__('Danh mục')}}</th>
+                    <th>{{__('Ảnh')}}</th>
+                    <th>{{__('Vị trí')}}</th>
+                    <th>{{__('Thứ tự')}}    </th>
+                    <th>{{__('Trạng thái')}}</th>
+                    <th>{{__('Thời gian tạo')}}</th>
+                    <th>{{__('Thao tác')}}</th>
                 </tr>
                 </thead>
                 <tbody class="data_table">
