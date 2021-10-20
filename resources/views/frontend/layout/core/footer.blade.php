@@ -1,20 +1,20 @@
 <footer id="footer" class="footer">
 
-    <div class="footer-newsletter">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12 text-center">
-                    <h4>Our Newsletter</h4>
-                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
-                </div>
-                <div class="col-lg-6">
-                    <form action="" method="post">
-                        <input type="email" name="email"><input type="submit" value="Subscribe">
-                    </form>
-                </div>
-            </div>
-        </div>
-    </div>
+{{--    <div class="footer-newsletter">--}}
+{{--        <div class="container">--}}
+{{--            <div class="row justify-content-center">--}}
+{{--                <div class="col-lg-12 text-center">--}}
+{{--                    <h4>Our Newsletter</h4>--}}
+{{--                    <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>--}}
+{{--                </div>--}}
+{{--                <div class="col-lg-6">--}}
+{{--                    <form action="" method="post">--}}
+{{--                        <input type="email" name="email"><input type="submit" value="Subscribe">--}}
+{{--                    </form>--}}
+{{--                </div>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
 
     <div class="footer-top">
         <div class="container">
@@ -35,36 +35,31 @@
                 </div>
 
                 <div class="col-lg-2 col-6 footer-links">
-                    <h4>Liên kết hữu ích</h4>
+                    <h4>{{__('Liên kết hữu ích')}}</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="/">Trang chủ</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Về chúng tôi</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Dịch vụ</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Điều khoản</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Chính sách bảo mật</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="/">{{__('Trang chủ')}}</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">{{__('Về chúng tôi')}}</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">{{__('Dịch vụ')}}</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">{{__('Điều khoản')}}</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-2 col-6 footer-links">
-                    <h4>Dịch vụ của chúng tôi</h4>
+                    <h4>{{__('Dịch vụ của chúng tôi')}}</h4>
                     <ul>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Agency</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Gaming</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Studio</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Esport</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Entertainment</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Software</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">F&B</a></li>
-                        <li><i class="bi bi-chevron-right"></i> <a href="#">Center</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Dịch vụ vận chuyển</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Môi giới thương mại</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Quảng cáo thương mại</a></li>
+                        <li><i class="bi bi-chevron-right"></i> <a href="#">Dịch vụ đào tạo và tư vấn pháp lý và quản lý</a></li>
                     </ul>
                 </div>
 
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
-                    <h4>Liên hệ với chúng tôi</h4>
+                    <h4>{{__('Liên hệ với chúng tôi')}}</h4>
                     <p>
                         37 Nguyễn Văn Huyên - Phường Quan <br> Hoa - Cầu Giấy - Hà Nội <br>
                         <strong>Phone:</strong> 0242.246.2020<br>
-                        <strong>Email:</strong> lienhe@hqgroups.vn<br>
+                        <strong>Email:</strong> lienhe@dktgroup.vn<br>
                     </p>
 
                 </div>

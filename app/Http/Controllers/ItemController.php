@@ -20,8 +20,8 @@ class ItemController extends Controller
     public function index()
     {
         $module = $this->module;
-        $page_title = 'Item management';
-        $page_description = 'is description';
+        $page_title = "$module management";
+        $page_description = '';
         $groups = Group::where('module',$this->module.'-list')->get();
         $items = Item::with('user', 'groups')->where('module', $module)->paginate(10);
         return view('backend.items.list', compact('page_title', 'page_description', 'items', 'groups', 'module'));

@@ -3,8 +3,8 @@
     <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-            <h2>Pricing</h2>
-            <p>Lĩnh vực kinh doanh</p>
+            <h2>{{__('Lĩnh vực')}}</h2>
+            <p>{{__('Lĩnh vực kinh doanh')}}</p>
         </header>
 
         <div class="row gy-4 root" data-aos="fade-left">

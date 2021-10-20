@@ -3,8 +3,8 @@
     <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-            <h2>Dịch vụ</h2>
-            <p>Dịch vụ của chúng tôi</p>
+            <h2>{{__('Dịch vụ')}}</h2>
+            <p>{{__('Dịch vụ của chúng tôi')}}</p>
         </header>
         <div class="row gy-4">
             @foreach($my_service as $key => $item )

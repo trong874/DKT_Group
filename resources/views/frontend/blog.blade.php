@@ -3,11 +3,10 @@
     <section class="breadcrumbs">
         <div class="container">
             <ol>
-                <li><a href="/">Trang chủ</a></li>
-                <li><a href="/blog">Blog</a></li>
-                <li>Blog Single</li>
+                <li><a href="/">{{__('Trang chủ')}}</a></li>
+                <li><span>{{__('Tin tức')}}</span></li>
             </ol>
-            <h2>{{$page_title??'DKT'}}</h2>
+            <h2>{{__($page_title)??'DKT'}}</h2>
         </div>
     </section>
     <section id="blog" class="blog">
@@ -28,8 +27,8 @@
 
                                 <div class="entry-meta">
                                     <ul>
-                                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="blog-single.html">{{$blog->user->name}}</a></li>
-                                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="blog-single.html"><time datetime="2020-01-01">
+                                        <li class="d-flex align-items-center"><i class="bi bi-person"></i> <a href="{{$blog->url}}">{{$blog->user->name}}</a></li>
+                                        <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="{{$blog->url}}"><time datetime="2020-01-01">
                                             {{$blog->created_at}}</time></a></li>
                                     </ul>
                                 </div>

@@ -1,5 +1,5 @@
 <div class="sidebar">
-    <h3 class="sidebar-title">Tìm kiếm</h3>
+    <h3 class="sidebar-title">{{__('Tìm kiếm')}}</h3>
     <div class="sidebar-item search-form">
         <form method="GET" action="{{route('news.search')}}">
             <input type="text" name="keyword" id="keyword" required>
@@ -7,7 +7,7 @@
         </form>
     </div><!-- End sidebar search formn-->
 
-    <h3 class="sidebar-title">Danh mục tin tức</h3>
+    <h3 class="sidebar-title">{{__('Danh mục tin tức')}}</h3>
     <div class="sidebar-item categories">
         <ul>
             @foreach($categories_news as $category)
@@ -17,7 +17,7 @@
     </div>
     <!-- End sidebar categories-->
 
-    <h3 class="sidebar-title">Tin xem nhiều</h3>
+    <h3 class="sidebar-title">{{__('Tin tức hàng đầu')}}</h3>
     <div class="sidebar-item recent-posts">
         @foreach($top_view as $blog)
         <div class="post-item clearfix">

@@ -13,7 +13,7 @@ return [
         ],
         // Custom
         [
-            'section' => 'Custom',
+            'section' => 'Tin tức',
         ],
         [
             'title' => 'Quản lí tin tức',
@@ -33,7 +33,7 @@ return [
             ]
         ],
         [
-            'section'=>'Advertisement'
+            'section'=>'Quảng cáo'
         ],
         [
             'title'=>'Quản lí quảng cáo',

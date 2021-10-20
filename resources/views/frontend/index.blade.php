@@ -1,17 +1,16 @@
 @extends('frontend.layout.master')
-
 @section('content')
     <!-- ======= Hero Section ======= -->
     <section id="hero" class="hero d-flex align-items-center">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
-                    <h1 data-aos="fade-up" class="aos-init aos-animate" style="color: #012970">Chúng tôi tạo ra mạng lưới các CREATOR với khả năng sản xuất sáng tạo liên tục.</h1>
-                    <h5 data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">Chia sẻ các khoảnh khắc chiến thắng với hàng triệu người dùng trực tuyến</h5>
+                    <h1 data-aos="fade-up" class="aos-init aos-animate" style="color: #012970">{{__('Chúng tôi đang nỗ lực không ngừng từng ngày để trở thành công ty hàng đầu trong lĩnh vực Thương mại điện tử tại thị trường Đông Nam Á')}}</h1>
+                    <h5 data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">{{__('khẳng định vị thế của bản thân trên thị trường quốc tế, hướng tới mục tiêu thúc đẩy sự phát triển của lĩnh vực thương mại điện tử tại Việt Nam nói chung, và lĩnh vực thương mại điện tử xuyên biên giới nói riêng.')}} </h5>
                     <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
                         <div class="text-center text-lg-start">
                             <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
-                                <span>Bắt đầu</span>
+                                <span>{{__('Xem thêm')}}</span>
                                 <i class="bi bi-arrow-right"></i>
                             </a>
                         </div>

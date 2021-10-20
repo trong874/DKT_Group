@@ -3,8 +3,8 @@
     <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-            <h2>Đặc trưng</h2>
-            <p>Những điều cần làm để thành công</p>
+            <h2>{{__('Môi trường')}}</h2>
+            <p>{{__('Môi trường làm việc của chúng tôi')}}</p>
         </header>
         <div class="row">
             <div class="col-lg-6">
@@ -17,42 +17,42 @@
                     <div class="col-md-6" data-aos="zoom-out" data-aos-delay="200">
                         <div class="feature-box d-flex align-items-center">
                             <i class="bi bi-check"></i>
-                            <h3>Làm theo quy trình</h3>
+                            <h3>Mọi người luôn hỗ trợ lẫn nhau</h3>
                         </div>
                     </div>
 
                     <div class="col-md-6" data-aos="zoom-out" data-aos-delay="300">
                         <div class="feature-box d-flex align-items-center">
                             <i class="bi bi-check"></i>
-                            <h3>Đoàn kết là never chết</h3>
+                            <h3>Cấp trên luôn hỗ trợ, tạo điều kiện</h3>
                         </div>
                     </div>
 
                     <div class="col-md-6" data-aos="zoom-out" data-aos-delay="400">
                         <div class="feature-box d-flex align-items-center">
                             <i class="bi bi-check"></i>
-                            <h3>Lao động hăng say vận may sẽ đến</h3>
+                            <h3>Phong cách làm việc cởi mở</h3>
                         </div>
                     </div>
 
                     <div class="col-md-6" data-aos="zoom-out" data-aos-delay="500">
                         <div class="feature-box d-flex align-items-center">
                             <i class="bi bi-check"></i>
-                            <h3>Kỷ luật để thành công</h3>
+                            <h3>Chế độ lương thưởng phúc lợi đầy đủ</h3>
                         </div>
                     </div>
 
                     <div class="col-md-6" data-aos="zoom-out" data-aos-delay="600">
                         <div class="feature-box d-flex align-items-center">
                             <i class="bi bi-check"></i>
-                            <h3>Thái độ hơn trình độ</h3>
+                            <h3>Không gian làm việc lý tưởng</h3>
                         </div>
                     </div>
 
                     <div class="col-md-6" data-aos="zoom-out" data-aos-delay="700">
                         <div class="feature-box d-flex align-items-center">
                             <i class="bi bi-check"></i>
-                            <h3>Làm việc cố gắng sếp sẽ không mắng</h3>
+                            <h3>Bạn là một phần của công ty</h3>
                         </div>
                     </div>
 
@@ -64,18 +64,18 @@
         <!-- Feature Tabs -->
         <div class="row feture-tabs" data-aos="fade-up">
             <div class="col-lg-6">
-                <h3>Giới thiệu chung</h3>
+                <h3>{{__("Giới thiệu chung")}}</h3>
 
                 <!-- Tabs -->
                 <ul class="nav nav-pills mb-3">
                     <li>
-                        <a class="nav-link active" data-bs-toggle="pill" href="#tab1">Giới thiệu</a>
+                        <a class="nav-link active" data-bs-toggle="pill" href="#tab1">{{__('Giới thiệu')}}</a>
                     </li>
                     <li>
-                        <a class="nav-link" data-bs-toggle="pill" href="#tab2">Tầm nhìn</a>
+                        <a class="nav-link" data-bs-toggle="pill" href="#tab2">{{__('Tầm nhìn')}}</a>
                     </li>
                     <li>
-                        <a class="nav-link" data-bs-toggle="pill" href="#tab3">Sứ mệnh</a>
+                        <a class="nav-link" data-bs-toggle="pill" href="#tab3">{{__('Sứ mệnh')}}</a>
                     </li>
                 </ul>
                 <!-- End Tabs -->
@@ -128,7 +128,7 @@
 
         <!-- Feature Icons -->
         <div class="row feature-icons" data-aos="fade-up">
-            <h3>Ratione mollitia eos ab laudantium rerum beatae quo</h3>
+            <h3>{{__('Những lợi ích mà chúng tôi mang lại')}}</h3>
 
             <div class="row">
 

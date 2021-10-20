@@ -3,8 +3,8 @@
     <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-            <h2>đối tác</h2>
-            <p>Đối tác của chúng tôi</p>
+            <h2>{{__('Đối tác')}}</h2>
+            <p>{{__('Đối tác của chúng tôi')}}</p>
         </header>
 
         <div class="row gy-4">

@@ -3,8 +3,8 @@
     <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-            <h2>Team</h2>
-            <p>Ban lãnh đạo công ty</p>
+            <h2>{{__('Đội ngũ')}}</h2>
+            <p>{{__('Ban lãnh đạo công ty')}}</p>
         </header>
 
         <div class="testimonials-slider swiper" data-aos="fade-up" data-aos-delay="200">

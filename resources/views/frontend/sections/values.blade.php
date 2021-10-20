@@ -3,8 +3,8 @@
     <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-            <h2>Giá trị của chúng tôi</h2>
-            <p>LÝ DO CHỌN CHÚNG TÔI</p>
+            <h2>{{__('Giá trị của chúng tôi')}}</h2>
+            <p>{{__('Lý do chọn chúng tôi')}}</p>
         </header>
 
         <div class="row">

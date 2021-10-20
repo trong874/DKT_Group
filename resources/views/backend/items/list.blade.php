@@ -78,8 +78,8 @@
             <div class="col-3 mt-3"></div>
 
             <div class="col-3 mt-3">
-                <button class="btn btn-success" type="submit">Search</button>
-                <button type="reset" class="btn btn-outline-warning">Reset</button>
+                <button class="btn btn-success" type="submit">{{__('Tìm kiếm')}}</button>
+                <button type="reset" class="btn btn-outline-warning">{{__('Đặt lại')}}</button>
             </div>
         </div>
     </form>

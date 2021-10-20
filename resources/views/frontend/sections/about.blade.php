@@ -5,7 +5,7 @@
 
             <div class="col-lg-6 d-flex flex-column justify-content-center" data-aos="fade-up" data-aos-delay="200">
                 <div class="content">
-                    <h3>Chúng tôi là ai</h3>
+                    <h3>{{__('Chúng tôi là ai')}}</h3>
                     <h2>Công ty cổ phần thương mại điện tử DKT (DKT E-COMMERCE ,.JSC ) là công ty hoạt động trên lĩnh vực thương mại điện tử B2C hàng đầu Việt Nam với quy mô trải rộng ở các quốc gia ở Châu Á và Châu  Âu.
                     </h2>
                     <p>
@@ -14,7 +14,7 @@
                     </p>
                     <div class="text-center text-lg-start">
                         <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
-                            <span>Đọc thêm</span>
+                            <span>{{__('Xem thêm')}}</span>
                             <i class="bi bi-arrow-right"></i>
                         </a>
                     </div>

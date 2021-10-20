@@ -18,7 +18,7 @@ class PagesController extends Controller
     {
         $page_title = 'CÔNG TY CỔ PHẦN TRUYỀN THÔNG VÀ DỊCH VỤ HQ GROUP';
 
-        $news = $this->getNews();
+        $news = $this->getNews(3);
 
         $my_service = $this->getMyService();
 

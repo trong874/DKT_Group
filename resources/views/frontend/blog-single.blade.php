@@ -4,11 +4,11 @@
         <div class="container">
 
             <ol>
-                <li><a href="/">Trang chủ</a></li>
-                <li><a href="/tin-tuc">Blog</a></li>
-                <li>Blog Single</li>
+                <li><a href="/">{{__('Trang chủ')}}</a></li>
+                <li><a href="/tin-tuc">{{__('Tin tức')}}</a></li>
+                <li><span>{{$news[0]->title}}</span></li>
             </ol>
-            <h2>{{$page_title??'DKT'}}</h2>
+            <h2>{{__($page_title)??'DKT'}}</h2>
         </div>
     </section>
     <section id="blog" class="blog">
