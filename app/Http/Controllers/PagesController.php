@@ -16,7 +16,7 @@ class PagesController extends Controller
 
     public function index()
     {
-        $page_title = 'CÔNG TY CỔ PHẦN TRUYỀN THÔNG VÀ DỊCH VỤ HQ GROUP';
+        $page_title = 'Công ty cổ phần thương mại điện tử DKT';
 
         $news = $this->getNews(3);
 
