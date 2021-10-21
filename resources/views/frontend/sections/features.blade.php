@@ -128,7 +128,7 @@
 
         <!-- Feature Icons -->
         <div class="row feature-icons" data-aos="fade-up">
-            <h3>{{__('Những lợi ích mà chúng tôi mang lại')}}</h3>
+            <h3>{{__('Mục tiêu của chúng tôi')}}</h3>
 
             <div class="row">
 
@@ -150,7 +150,7 @@
                         <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="100">
                             <i class="ri-stack-line"></i>
                             <div>
-                                <h4>Ullamco laboris nisi</h4>
+                                <h4>Đặt sự hài lòng của khách hàng lên hàng đầu</h4>
                                 <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                             </div>
                         </div>
@@ -158,7 +158,7 @@
                         <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="200">
                             <i class="ri-brush-4-line"></i>
                             <div>
-                                <h4>Labore consequatur</h4>
+                                <h4>Trở thành công ty thương mại điện tử số 1 Việt Nam</h4>
                                 <p>Aut suscipit aut cum nemo deleniti aut omnis. Doloribus ut maiores omnis facere</p>
                             </div>
                         </div>
@@ -166,7 +166,7 @@
                         <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="300">
                             <i class="ri-magic-line"></i>
                             <div>
-                                <h4>Beatae veritatis</h4>
+                                <h4>Mở rộng quy mô trên toàn thế giới</h4>
                                 <p>Expedita veritatis consequuntur nihil tempore laudantium vitae denat pacta</p>
                             </div>
                         </div>
@@ -174,7 +174,7 @@
                         <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="400">
                             <i class="ri-command-line"></i>
                             <div>
-                                <h4>Molestiae dolor</h4>
+                                <h4>Phấn đấu trở thành doanh nghiệp Fulfillment hàng đầu tại khu vực Châu Á</h4>
                                 <p>Et fuga et deserunt et enim. Dolorem architecto ratione tensa raptor marte</p>
                             </div>
                         </div>
@@ -182,7 +182,7 @@
                         <div class="col-md-6 icon-box" data-aos="fade-up" data-aos-delay="500">
                             <i class="ri-radar-line"></i>
                             <div>
-                                <h4>Explicabo consectetur</h4>
+                                <h4>Giúp cho Doanh nghiệp thương mại điện tử trong nước dễ dàng tiếp cận với với thị trường quốc tế</h4>
                                 <p>Est autem dicta beatae suscipit. Sint veritatis et sit quasi ab aut inventore</p>
                             </div>
                         </div>

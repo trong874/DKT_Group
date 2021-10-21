@@ -65,10 +65,5 @@
         @include('frontend.sections.contact')
         <!-- End Contact Section -->
     </main>
-    <style>
-        header p {
-            text-transform: uppercase;
-        }
-    </style>
     <!-- End #main -->
 @endsection
