@@ -142,8 +142,8 @@
                         <div class="col-md-6 icon-box" data-aos="fade-up">
                             <i class="ri-line-chart-line"></i>
                             <div>
-                                <h4>Corporis voluptates sit</h4>
-                                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
+                                <h4>Mang sản phẩm lại gần hơn với người tiêu dùng</h4>
+                                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
                             </div>
                         </div>
 
