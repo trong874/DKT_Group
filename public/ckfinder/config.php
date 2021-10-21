@@ -34,7 +34,7 @@ $config['authentication'] = function () {
 
 
 $config['licenseName'] = $_SERVER['SERVER_NAME'];
-$config['licenseKey']  = 'B888F5TWGYM8XH6YWBWY5AY7TCMJH';
+$config['licenseKey']  = 'UJYJYVGUU37J1V9QE9J7NEYHHSELJ';
 
 
 
