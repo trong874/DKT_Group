@@ -33,8 +33,8 @@ $config['authentication'] = function () {
 // https://ckeditor.com/docs/ckfinder/ckfinder3-php/configuration.html#configuration_options_licenseKey
 
 
-$config['licenseName'] = $_SERVER['SERVER_NAME'];
-$config['licenseKey']  = 'UJYJYVGUU37J1V9QE9J7NEYHHSELJ';
+$config['licenseName'] = 'dktgroup.vn';
+$config['licenseKey']  = 'W222MPDUCV8YFD7K4CMNNXM56BWFE';
 
 
 
