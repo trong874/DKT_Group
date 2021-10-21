@@ -21,8 +21,8 @@
             <div class="row gy-4">
                 <div class="col-lg-5 col-md-12 footer-info">
                     <a href="/" class="logo d-flex align-items-center">
-                        <img src="{{asset('assets/img/logo.png')}}" alt="">
-                        <span>DKT</span>
+                        <img src="{{asset('media/Logo-DKT-Black.png')}}" alt="">
+{{--                        <span>DKT</span>--}}
                     </a>
                     <p>DKT là một doanh nghiệp trẻ tiên phong trong việc phát triển và ứng dụng khoa học công nghệ 4.0 vào trong kinh doanh thay thế hình thức kinh doanh truyền thống phù hợp với định hướng phát triển kinh tế chung của thị trường quốc tế.
                     </p>
@@ -71,13 +71,6 @@
     <div class="container">
         <div class="copyright">
             &copy; Copyright <strong><span>FlexStart</span></strong>. All Rights Reserved
-        </div>
-        <div class="credits">
-            <!-- All the links in the footer should remain intact. -->
-            <!-- You can delete the links only if you purchased the pro version. -->
-            <!-- Licensing information: https://bootstrapmade.com/license/ -->
-            <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/flexstart-bootstrap-startup-template/ -->
-            Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
         </div>
     </div>
 </footer>

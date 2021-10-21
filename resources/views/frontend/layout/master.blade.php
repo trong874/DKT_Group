@@ -7,11 +7,10 @@
 
     <title>{{$page_title??'DKT Group'}}</title>
     <meta content="" name="description">
-
     <meta content="" name="keywords">
 
     <!-- Favicons -->
-    <link rel="shortcut icon" href="https://cdn-icons-png.flaticon.com/512/1384/1384061.png" type="image/x-icon">
+    <link rel="shortcut icon" href="{{asset('media/Logo-DKT-Black.png')}}" type="image/x-icon">
     <link href="{{asset('assets/img/apple-touch-icon.png')}}" rel="apple-touch-icon">
 
     <!-- Google Fonts -->

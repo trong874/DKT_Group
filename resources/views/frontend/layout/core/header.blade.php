@@ -2,8 +2,8 @@
     <div class="container-fluid container-xl d-flex align-items-center justify-content-between">
 
         <a href="/" class="logo d-flex align-items-center">
-            <img src="{{asset('assets/img/logo.png')}}" alt="">
-            <span>DKT</span>
+            <img src="{{asset('media/Logo-DKT-Black.png')}}" alt="">
+{{--            <span>DKT</span>--}}
         </a>
         <nav id="navbar" class="navbar">
             <ul>
@@ -44,9 +44,8 @@
         .locale {
             width: 0;
         }
-
         .locale>img{
-            width: 20px;
+            width: 25px;
         }
     </style>
 </header>

@@ -4,6 +4,7 @@ use App\Http\Controllers\GroupController;
 use App\Http\Controllers\ItemController;
 use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\PagesController;
+use App\Http\Controllers\SettingController;
 use App\Http\Controllers\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,6 +24,8 @@ Route::group(['middleware'=>'language'],function (){
         Route::resource('article-list', GroupController::class);
 
         Route::resource('advertisement-list', GroupController::class);
+
+        Route::resource('setting', SettingController::class);
 
         Route::get('/user-manage', [UserController::class, 'index'])->name('user.index');
 

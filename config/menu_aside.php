@@ -53,5 +53,16 @@ return [
             ]
         ],
 
+        [
+            'section'=>'Hệ thống'
+        ],
+        [
+            'title' => 'Cấu hình chung',
+            'root' => true,
+            'icon' => 'media/svg/icons/Design/Layers.svg', // or can be 'flaticon-home' or any flaticon-*
+            'page' => '/setting',
+            'new-tab' => false,
+        ],
+
         ]
 ];
