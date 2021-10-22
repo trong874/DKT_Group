@@ -1313,10 +1313,12 @@ section {
 }
 
 .testimonials .testimonial-item .testimonial-img {
-    width: 90px;
+    height: 200px;
+    width: 200px;
     border-radius: 50%;
     border: 4px solid #fff;
     margin: 0 auto;
+    object-fit: cover;
 }
 
 .testimonials .testimonial-item h3 {

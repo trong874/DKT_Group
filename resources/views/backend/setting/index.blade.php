@@ -46,10 +46,12 @@
                 <div class="tab-content mt-5" id="myTabContent">
                     <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
                         @foreach($configs as $item)
+                            @if($item->type == 'website_info')
                             <div class="form-group">
                             <label for="{{$item->name}}" style="text-transform: uppercase"> {{__($item->name)}} </label>
                             <input type="text" name="{{$item->name}}" id="{{$item->name}}" class="form-control" value="{{$item->val}}" placeholder="{{__($item->name)}}">
                             </div>
+                            @endif
                         @endforeach
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Tab content

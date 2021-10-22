@@ -8,7 +8,7 @@
         </header>
         <div class="row">
             <div class="col-lg-6">
-                <img src="assets/img/features.png" class="img-fluid" alt="">
+                <img src="assets/img/môi-trường-làm-việc.jpg" class="img-fluid" alt="">
             </div>
 
             <div class="col-lg-6 mt-5 mt-lg-0 d-flex">
@@ -121,7 +121,7 @@
             </div>
 
             <div class="col-lg-6">
-                <img src="assets/img/features-2.png" class="img-fluid" alt="">
+                <img src="assets/img/about.jpg" class="img-fluid" alt="">
             </div>
 
         </div><!-- End Feature Tabs -->
@@ -131,7 +131,6 @@
             <h3>{{__('Mục tiêu của chúng tôi')}}</h3>
 
             <div class="row">
-
                 <div class="col-xl-4 text-center" data-aos="fade-right" data-aos-delay="100">
                     <img src="assets/img/features-3.png" class="img-fluid p-4" alt="">
                 </div>
