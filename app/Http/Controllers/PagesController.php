@@ -179,25 +179,28 @@ class PagesController extends Controller
     public function showNewsBySlug($slug)
     {
         $page_title = 'Trang tin tức';
+        $description =  Setting::where('name','description')->first('val')->val;
         $categories_news = Group::where('module','article-list')->get();
         $category = Group::with('item')->where('slug',$slug)->get();
         $news = $category[0]->item()->paginate(3);
         $top_view = Item::where('module','article')->orderBy('totalviews','DESC')->paginate(5);
-        return view('frontend.blog',compact('page_title','news','top_view','categories_news'));
+        return view('frontend.blog',compact('page_title','news','top_view','categories_news','description'));
     }
 
     public function showNews()
     {
         $page_title = 'Trang tin tức';
+        $description =  Setting::where('name','description')->first('val')->val;
         $news = $this->getNewsForBlog();
         $top_view = $this->getTopViewNews();
         $categories_news = Group::where('module','article-list')->get(['url','title']);
-        return view('frontend.blog',compact('news','page_title','top_view','categories_news'));
+        return view('frontend.blog',compact('news','page_title','top_view','categories_news','description'));
     }
 
     public function showDetailNews($slug)
     {
         $page_title = 'Trang tin tức';
+        $description =  Setting::where('name','description')->first('val')->val;
         $categories_news = Group::where('module','article-list')->get(['url','title']);
         $news = Item::with('user')
             ->where('slug',$slug)
@@ -212,7 +215,7 @@ class PagesController extends Controller
                 'created_at'
             ]);
         $top_view = $this->getTopViewNews();
-        return view('frontend.blog-single',compact('page_title','news','top_view','categories_news'));
+        return view('frontend.blog-single',compact('page_title','news','top_view','categories_news','description'));
     }
 
     public function filterNews(Request $request)

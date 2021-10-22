@@ -20,9 +20,10 @@ class SettingController extends Controller
             if ($key == '_method'||$key == '_token'){
                 continue;
             }
-           $config = Setting::where('name',$key)->first();
+            $config = Setting::where('name',$key)->first();
             $config->update(['val'=>$item]);
         }
+
         return back();
     }
 }
