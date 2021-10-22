@@ -1,9 +1,20 @@
 @extends('layout.default')
 @section('content')
-    <div class="card">
-        <div class="card-header">
-            Cấu hình hệ thống
-        </div>
+    <form action="{{route("setting.update",'---')}}" method="POST">
+        @method('PUT')
+        @csrf
+    <div class="card card-custom">
+            <div class="card-header">
+                <div class="card-title">
+                    <h3 class="card-label">Cấu hình hệ thống</h3>
+                </div>
+                <div class="card-toolbar">
+                    <!--begin::Button-->
+                    <button type="submit" class="btn btn-primary font-weight-bolder">
+                        <i class="flaticon2-check-mark"></i>{{__('Cập nhật')}}</button>
+                    <!--end::Button-->
+                </div>
+            </div>
         <div class="card-body">
             <div class="example-preview">
                 <ul class="nav nav-tabs" id="myTab" role="tablist">
@@ -34,7 +45,12 @@
                 </ul>
                 <div class="tab-content mt-5" id="myTabContent">
                     <div class="tab-pane fade active show" id="home" role="tabpanel" aria-labelledby="home-tab">
-
+                        @foreach($configs as $item)
+                            <div class="form-group">
+                            <label for="{{$item->name}}" style="text-transform: uppercase"> {{__($item->name)}} </label>
+                            <input type="text" name="{{$item->name}}" id="{{$item->name}}" class="form-control" value="{{$item->val}}" placeholder="{{__($item->name)}}">
+                            </div>
+                        @endforeach
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">Tab content
                         2
@@ -46,4 +62,5 @@
             </div>
         </div>
     </div>
+    </form>
 @endsection

@@ -24,8 +24,7 @@
                         <img src="{{asset('media/Logo-DKT-Black.png')}}" alt="">
 {{--                        <span>DKT</span>--}}
                     </a>
-                    <p>DKT là một doanh nghiệp trẻ tiên phong trong việc phát triển và ứng dụng khoa học công nghệ 4.0 vào trong kinh doanh thay thế hình thức kinh doanh truyền thống phù hợp với định hướng phát triển kinh tế chung của thị trường quốc tế.
-                    </p>
+                    <p>{{$description}}</p>
                     <div class="social-links mt-3">
                         <a href="#" class="twitter"><i class="bi bi-twitter"></i></a>
                         <a href="#" class="facebook"><i class="bi bi-facebook"></i></a>

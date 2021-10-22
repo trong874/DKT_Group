@@ -16,23 +16,21 @@
                         <div class="info-box">
                             <i class="bi bi-geo-alt"></i>
                             <h3>{{__('Địa chỉ')}}</h3>
-                            <p>37 NGUYỄN VĂN HUYÊN <br>
-                                P.QUAN HOA - CẦU GIẤY - HÀ NỘI
-                            </p>
+                            <p>{!! $address !!}</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="info-box">
                             <i class="bi bi-telephone"></i>
                             <h3>{{__('Gọi cho chúng tôi')}}</h3>
-                            <p>0242.246.2020</p>
+                            <p>{!! $phone !!}</p>
                         </div>
                     </div>
                     <div class="col-md-6">
                         <div class="info-box">
                             <i class="bi bi-envelope"></i>
                             <h3>Email</h3>
-                            <p>LIENHE@HQGROUPS.VN</p>
+                            <p>{!! $email !!}</p>
                         </div>
                     </div>
                     <div class="col-md-6">

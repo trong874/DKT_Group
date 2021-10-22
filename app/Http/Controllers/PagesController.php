@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Models\Group;
 use App\Models\Item;
+use App\Models\Setting;
 use Illuminate\Http\Request;
 
 class PagesController extends Controller
@@ -16,7 +17,15 @@ class PagesController extends Controller
 
     public function index()
     {
-        $page_title = 'Công ty cổ phần thương mại điện tử DKT';
+        $page_title = Setting::where('name','title')->first('val')->val;
+
+        $email =  Setting::where('name','email')->first('val')->val;
+
+        $address =  Setting::where('name','address')->first('val')->val;
+
+        $phone =  Setting::where('name','phone')->first('val')->val;
+
+        $description =  Setting::where('name','description')->first('val')->val;
 
         $news = $this->getNews(3);
 
@@ -32,11 +41,25 @@ class PagesController extends Controller
 
         return view('frontend.index',compact(
             'page_title',
+
             'news',
+
             'my_service',
+
             'business_areas',
+
             'leadership_banner',
+
+            'email',
+
+            'address',
+
+            'phone',
+
+            'description',
+
             'partner_banner',
+
             'our_value_banner'
         ));
     }

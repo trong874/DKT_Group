@@ -1,1 +1,7 @@
-{}
+{
+    "title": "Tiêu đề",
+    "description": "Mô tả",
+    "keyword": "Từ khoá",
+    "address": "Địa chỉ",
+    "phone": "Điện thoại"
+}
