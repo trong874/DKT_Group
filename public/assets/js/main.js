@@ -270,6 +270,35 @@
       }
     }
   });
+    new Swiper('.recent-blog-posts-in', {
+        speed: 600,
+        loop: true,
+        autoplay: {
+          delay: 5000,
+          disableOnInteraction: false
+        },
+
+        slidesPerView: 'auto',
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        breakpoints: {
+            1200: {
+                slidesPerView: 3,
+            },
+            320: {
+                slidesPerView: 1,
+                spaceBetween: 40
+            },
+            680: {
+                slidesPerView: 2,
+                spaceBetween: 40
+            },
+
+        }
+    });
 
   /**
    * Animation on scroll
@@ -287,3 +316,4 @@
   });
 
 })();
+

@@ -121,7 +121,7 @@
             </div>
 
             <div class="col-lg-6">
-                <img src="assets/img/about.jpg" class="img-fluid" alt="">
+                <img src="assets/img/about.jpg" class="img-fluid" alt="" style="width: 635px;height: 475px;object-fit: cover">
             </div>
 
         </div><!-- End Feature Tabs -->

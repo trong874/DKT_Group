@@ -19,14 +19,6 @@ class PagesController extends Controller
     {
         $page_title = Setting::where('name','title')->first('val')->val;
 
-        $email =  Setting::where('name','email')->first('val')->val;
-
-        $address =  Setting::where('name','address')->first('val')->val;
-
-        $phone =  Setting::where('name','phone')->first('val')->val;
-
-        $description =  Setting::where('name','description')->first('val')->val;
-
         $news = $this->getNews(3);
 
         $my_service = $this->getMyService();
@@ -39,7 +31,7 @@ class PagesController extends Controller
 
         $our_value_banner = $this->getOurValueBanner();
 
-        return view('frontend.index',compact(
+        return view('frontend.index',$this->getConfigPage(),compact(
             'page_title',
 
             'news',
@@ -49,14 +41,6 @@ class PagesController extends Controller
             'business_areas',
 
             'leadership_banner',
-
-            'email',
-
-            'address',
-
-            'phone',
-
-            'description',
 
             'partner_banner',
 
@@ -190,17 +174,15 @@ class PagesController extends Controller
     public function showNews()
     {
         $page_title = 'Trang tin tức';
-        $description =  Setting::where('name','description')->first('val')->val;
         $news = $this->getNewsForBlog();
         $top_view = $this->getTopViewNews();
         $categories_news = Group::where('module','article-list')->get(['url','title']);
-        return view('frontend.blog',compact('news','page_title','top_view','categories_news','description'));
+        return view('frontend.blog',$this->getConfigPage(),compact('news','page_title','top_view','categories_news'));
     }
 
     public function showDetailNews($slug)
     {
         $page_title = 'Trang tin tức';
-        $description =  Setting::where('name','description')->first('val')->val;
         $categories_news = Group::where('module','article-list')->get(['url','title']);
         $news = Item::with('user')
             ->where('slug',$slug)
@@ -215,7 +197,17 @@ class PagesController extends Controller
                 'created_at'
             ]);
         $top_view = $this->getTopViewNews();
-        return view('frontend.blog-single',compact('page_title','news','top_view','categories_news','description'));
+        return view('frontend.blog-single',$this->getConfigPage(),compact('page_title','news','top_view','categories_news'));
+    }
+
+    public function getConfigPage()
+    {
+        return [
+          "description"=>  Setting::where('name','description')->first('val')->val,
+            "address"=>Setting::where('name','address')->first('val')->val,
+            "phone"=>Setting::where('name','phone')->first('val')->val,
+            "email"=> Setting::where('name','email')->first('val')->val
+        ];
     }
 
     public function filterNews(Request $request)
