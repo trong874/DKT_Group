@@ -10,7 +10,6 @@
         <div class="row gy-4">
 
             <div class="col-lg-6">
-
                 <div class="row gy-4">
                     <div class="col-md-6">
                         <div class="info-box">

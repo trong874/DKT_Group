@@ -6,7 +6,6 @@
             <h2>{{__('Đối tác')}}</h2>
             <p>{{__('Đối tác của chúng tôi')}}</p>
         </header>
-
         <div class="row gy-4">
             <div class="col-lg-3 col-md-6 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="100"></div>
             @foreach($partner_banner as $key => $item)

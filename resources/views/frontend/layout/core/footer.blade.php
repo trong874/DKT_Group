@@ -55,10 +55,9 @@
 
                 <div class="col-lg-3 col-md-12 footer-contact text-center text-md-start">
                     <h4>{{__('Liên hệ với chúng tôi')}}</h4>
-                    <p>
-                        37 Nguyễn Văn Huyên - Phường Quan <br> Hoa - Cầu Giấy - Hà Nội <br>
-                        <strong>Phone:</strong> 0242.246.2020<br>
-                        <strong>Email:</strong> lienhe@dktgroup.vn<br>
+                    <p>{!! $address !!}<br>
+                        <strong>Phone:</strong>{!! $phone !!}<br>
+                        <strong>Email:</strong>{!! $email !!}<br>
                     </p>
 
                 </div>

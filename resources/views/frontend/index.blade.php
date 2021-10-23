@@ -5,7 +5,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
-                    <h1 data-aos="fade-up" class="aos-init aos-animate" style="color: #012970">{{__('Chúng tôi đang nỗ lực không ngừng từng ngày để trở thành công ty hàng đầu trong lĩnh vực Thương mại điện tử tại thị trường Đông Nam Á')}}</h1>
+                    <h1 data-aos="fade-up" class="aos-init aos-animate" style="color: #012970">Chúng tôi đang nỗ lực không ngừng để trở thành công ty hàng đầu trong lĩnh vực Thương mại điện tử.</h1>
                     <h5 data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">{{__('khẳng định vị thế của bản thân trên thị trường quốc tế, hướng tới mục tiêu thúc đẩy sự phát triển của lĩnh vực thương mại điện tử tại Việt Nam nói chung, và lĩnh vực thương mại điện tử xuyên biên giới nói riêng.')}} </h5>
                     <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
                         <div class="text-center text-lg-start">
