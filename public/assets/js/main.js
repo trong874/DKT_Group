@@ -253,6 +253,9 @@
       delay: 5000,
       disableOnInteraction: false
     },
+
+      spaceBetween: 40,
+
     slidesPerView: 'auto',
     pagination: {
       el: '.swiper-pagination',
@@ -274,9 +277,11 @@
         speed: 600,
         loop: true,
         autoplay: {
-          delay: 5000,
-          disableOnInteraction: false
+            delay: 5000,
+            disableOnInteraction: false
         },
+
+        // spaceBetween: 20,
 
         slidesPerView: 'auto',
         pagination: {
@@ -285,18 +290,41 @@
             clickable: true
         },
         breakpoints: {
-            1200: {
-                slidesPerView: 3,
-            },
             320: {
                 slidesPerView: 1,
                 spaceBetween: 40
             },
-            680: {
-                slidesPerView: 2,
+
+            1200: {
+                slidesPerView: 3,
+            }
+        }
+    });
+    new Swiper('.services-in', {
+        speed: 600,
+        loop: true,
+        autoplay: {
+            delay: 5000,
+            disableOnInteraction: false
+        },
+
+        spaceBetween: 10,
+
+        slidesPerView: 'auto',
+        pagination: {
+            el: '.swiper-pagination',
+            type: 'bullets',
+            clickable: true
+        },
+        breakpoints: {
+            320: {
+                slidesPerView: 1,
                 spaceBetween: 40
             },
 
+            1200: {
+                slidesPerView: 3,
+            }
         }
     });
 
@@ -315,5 +343,11 @@
     aos_init();
   });
 
+
 })();
+
+
+
+
+
 
