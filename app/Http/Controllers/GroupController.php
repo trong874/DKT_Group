@@ -44,8 +44,8 @@ class GroupController extends Controller
         $page_title = 'Danh sách bài viết';
         $page_description = '';
         $groups = Group::where('module',$this->module)->get(['id','title','parent_id']);
-        $items = Group::with('item')->where('slug',$request->segment(2))->get('id');
-        $items = $items[0]->item()->paginate(10);
+        $items = Group::with('item')->where('slug',$request->segment(2))->first('id');
+        $items = $items->item()->paginate(10);
         return view('backend.items.list', compact('page_title', 'page_description', 'items', 'groups', 'module'));
     }
 

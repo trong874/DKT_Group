@@ -19,7 +19,17 @@ class PagesController extends Controller
     {
         $page_title = Setting::where('name','title')->first('val')->val;
 
-        $news = $this->getNews(3);
+        $hero_banner = $this->getHeroBanner();
+
+        $who_are_we_banner = $this->getWhoAreWeBanner();
+
+        $environment_banner = $this->getEnvironmentBanner();
+
+        $our_target_banner = $this->getOurTargetBanner();
+
+        $general_intro_banner = $this->getGeneralIntro();
+
+        $news = $this->getNews(5);
 
         $my_service = $this->getMyService();
 
@@ -33,6 +43,16 @@ class PagesController extends Controller
 
         return view('frontend.index',$this->getConfigPage(),compact(
             'page_title',
+
+            'hero_banner',
+
+            'our_target_banner',
+
+            'general_intro_banner',
+
+            'environment_banner',
+
+            'who_are_we_banner',
 
             'news',
 
@@ -65,6 +85,64 @@ class PagesController extends Controller
                 'image',
                 'description',
                 'content'
+            ]);
+    }
+
+    public function getGeneralIntro()
+    {
+        return Item::where('module','advertisement')
+            ->where('position','general_intro')
+            ->where('status','1')
+            ->get([
+                'title',
+                'content',
+                'image'
+            ]);
+    }
+
+    public function getOurTargetBanner()
+    {
+        return Item::where('module','advertisement')
+            ->where('position','our_target_banner')
+            ->where('status','1')
+            ->get([
+                'title',
+                'description',
+                'image'
+            ]);
+    }
+
+    public function getEnvironmentBanner()
+    {
+        return Item::where('module','advertisement')
+            ->where('position','environment_banner')
+            ->where('status','1')
+            ->get([
+                'title',
+                'image'
+            ]);
+    }
+    public function getHeroBanner()
+    {
+        return Item::where('module','advertisement')
+            ->where('position','hero_banner')
+            ->where('status','1')
+            ->first([
+                'title',
+                'image',
+                'description',
+            ]);
+    }
+
+    public function getWhoAreWeBanner()
+    {
+        return Item::where('module','advertisement')
+            ->where('position','who_are_we_banner')
+            ->where('status','1')
+            ->first([
+                'title',
+                'image',
+                'description',
             ]);
     }
 

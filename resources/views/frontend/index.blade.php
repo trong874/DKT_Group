@@ -5,8 +5,8 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 d-flex flex-column justify-content-center">
-                    <h1 data-aos="fade-up" class="aos-init aos-animate" style="color: #012970">Chúng tôi đang nỗ lực không ngừng để trở thành công ty hàng đầu trong lĩnh vực Thương mại điện tử.</h1>
-                    <h5 data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">{{__('khẳng định vị thế của bản thân trên thị trường quốc tế, hướng tới mục tiêu thúc đẩy sự phát triển của lĩnh vực thương mại điện tử tại Việt Nam nói chung, và lĩnh vực thương mại điện tử xuyên biên giới nói riêng.')}} </h5>
+                    <h1 data-aos="fade-up" class="aos-init aos-animate" style="color: #012970">{!! $hero_banner->title !!}</h1>
+                    <h5 data-aos="fade-up" data-aos-delay="400" class="aos-init aos-animate">{!! $hero_banner->description !!} </h5>
                     <div data-aos="fade-up" data-aos-delay="600" class="aos-init aos-animate">
                         <div class="text-center text-lg-start">
                             <a href="#about" class="btn-get-started scrollto d-inline-flex align-items-center justify-content-center align-self-center">
@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
-                    <img src="assets/img/hero-img.png" class="img-fluid" alt="">
+                    <img src="{{$hero_banner->image}}" class="img-fluid" alt="">
                 </div>
             </div>
         </div>

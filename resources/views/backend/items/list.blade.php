@@ -52,6 +52,11 @@
                         <option @if(isset($old_data))@if($old_data['position']=='leadership_banner')selected @endif @endif>leadership_banner</option>
                         <option @if(isset($old_data))@if($old_data['position']=='business_areas')selected @endif @endif>business_areas</option>
                         <option @if(isset($old_data))@if($old_data['position']=='our_value_banner')selected @endif @endif>our_value_banner</option>
+                        <option @if(isset($old_data))@if($old_data['position']=='hero_banner')selected @endif @endif>hero_banner</option>
+                        <option @if(isset($old_data))@if($old_data['position']=='who_are_we_banner')selected @endif @endif>who_are_we_banner</option>
+                        <option @if(isset($old_data))@if($old_data['position']=='environment_banner')selected @endif @endif>environment_banner</option>
+                        <option @if(isset($old_data))@if($old_data['position']=='general_intro')selected @endif @endif>general_intro</option>
+                        <option @if(isset($old_data))@if($old_data['position']=='our_target_banner')selected @endif @endif>our_target_banner</option>
                     </select>
                     @else
                         <input type="text" name="position" class="form-control" placeholder="{{__('Vị trí')}}" value="{{$old_data['position'] ?? ''}}">

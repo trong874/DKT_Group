@@ -43,7 +43,23 @@
                     </div>
                     <label class="col-lg-1 col-form-label text-right">Position</label>
                     <div class="col-lg-3">
+                        @if($module == 'advertisement')
+                            <select type="text" name="position" class="form-control">
+                                <option value="">--Vị trí--</option>
+                                <option @if(isset($old_data))@if($old_data['position']=='my_service')selected @endif @endif>my_service</option>
+                                <option  @if(isset($old_data))@if($old_data['position']=='partner_banner')selected @endif @endif>partner_banner</option>
+                                <option @if(isset($old_data))@if($old_data['position']=='leadership_banner')selected @endif @endif>leadership_banner</option>
+                                <option @if(isset($old_data))@if($old_data['position']=='business_areas')selected @endif @endif>business_areas</option>
+                                <option @if(isset($old_data))@if($old_data['position']=='our_value_banner')selected @endif @endif>our_value_banner</option>
+                                <option @if(isset($old_data))@if($old_data['position']=='hero_banner')selected @endif @endif>hero_banner</option>
+                                <option @if(isset($old_data))@if($old_data['position']=='who_are_we_banner')selected @endif @endif>who_are_we_banner</option>
+                                <option @if(isset($old_data))@if($old_data['position']=='environment_banner')selected @endif @endif>environment_banner</option>
+                                <option @if(isset($old_data))@if($old_data['position']=='general_intro')selected @endif @endif>general_intro</option>
+                                <option @if(isset($old_data))@if($old_data['position']=='our_target_banner')selected @endif @endif>our_target_banner</option>
+                            </select>
+                        @else
                         <input type="text" name="position" id="position" class="form-control" placeholder="Position" value="{{$item->position??null}}" required/>
+                        @endif
                         <span class="form-text text-muted">Please enter your Position</span>
                     </div>
                 </div>
