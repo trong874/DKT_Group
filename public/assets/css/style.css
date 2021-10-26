@@ -1537,9 +1537,9 @@ section {
     transition: 0.5s;
 }
 @media (max-width: 480px) {
-    .recent-blog-posts-in .swiper-slide{
-        margin-right: 30px !important;
-    }
+    /*.recent-blog-posts-in .swiper-slide{*/
+    /*    margin-right: 30px !important;*/
+    /*}*/
 }
 
 .recent-blog-posts .post-box .post-date {

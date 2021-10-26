@@ -9,7 +9,7 @@
         <div class="recent-blog-posts-in" style="overflow: hidden;">
             <div class="swiper-wrapper">
             @foreach($news as $item)
-            <div class="col-lg-4 swiper-slide">
+            <div class="swiper-slide" style="margin-right: 0">
                 <div class="post-box">
                     <div class="post-img"><img src="{{$item->image}}" class="img-fluid" alt=""></div>
                     <span class="post-date">{{$item->created_at}}</span>

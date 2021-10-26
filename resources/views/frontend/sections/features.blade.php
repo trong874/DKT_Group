@@ -57,7 +57,7 @@
 
                 </div>
 
-                <div class="col-lg-6">
+                <div class="col-lg-6 image_general">
                     <img src="{{$general_intro_banner[3]->image}}" class="img-fluid" alt=""
                          style="width: 635px;height: 475px;object-fit: cover">
                 </div>
@@ -96,5 +96,12 @@
             <!-- End Feature Icons -->
 
         </div>
-
+    </div>
+    <style>
+        @media (max-width: 480px) {
+            #features .row{
+                --bs-gutter-x: 0 !important;
+            }
+        }
+    </style>
 </section>
