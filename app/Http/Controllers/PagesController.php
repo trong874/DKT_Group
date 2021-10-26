@@ -48,6 +48,11 @@ class PagesController extends Controller
         ));
     }
 
+    public function dashboardBackend()
+    {
+        return view('backend.dashboard');
+    }
+
     public function getPartnerBanner($limit=4)
     {
         return Item::where('module','advertisement')
@@ -143,7 +148,6 @@ class PagesController extends Controller
                 'image',
                 'description',
                 'content',
-
             ]);
     }
 
@@ -168,7 +172,7 @@ class PagesController extends Controller
         $category = Group::with('item')->where('slug',$slug)->get();
         $news = $category[0]->item()->paginate(3);
         $top_view = Item::where('module','article')->orderBy('totalviews','DESC')->paginate(5);
-        return view('frontend.blog',compact('page_title','news','top_view','categories_news','description'));
+        return view('frontend.blog',$this->getConfigPage(),compact('page_title','news','top_view','categories_news','description'));
     }
 
     public function showNews()

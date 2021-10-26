@@ -37,6 +37,8 @@ Route::group(['middleware'=>'language'],function (){
 
         Route::post('/change_avatar',[UserController::class,'changeAvatar'])->name('user.change_avatar');
 
+        Route::get('/admin',[PagesController::class,'dashboardBackend'])->name('backend.dashboard');
+
     });
 
     Route::put('increase-views/{id}',[ItemController::class,'addView'])->name('items.add-view');
@@ -47,11 +49,11 @@ Route::group(['middleware'=>'language'],function (){
 
     Route::post('delete-multi-group',[GroupController::class,'destroyMultiple'])->name('groups.destroy_multi');
 
-    Route::get('/news/{slug}',[PagesController::class,'showNewsBySlug'])->name('news.slug ');
+    Route::get('/tin-tuc/{slug}',[PagesController::class,'showNewsBySlug'])->name('news.slug ');
 
     Route::get('/tin-tuc',[PagesController::class,'showNews'])->name('news.index');
 
-    Route::get('/news/detail/{slug}',[PagesController::class,'showDetailNews'])->name('news.detail');
+    Route::get('/news/{slug}',[PagesController::class,'showDetailNews'])->name('news.detail');
 
     Route::get('search/news',[PagesController::class,'filterNews'])->name('news.search');
 

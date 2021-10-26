@@ -63,7 +63,7 @@ class ItemController extends Controller
         $page_title = 'Edit Item';
         $module = $this->module;
         $page_description = 'is description';
-        $item = Item::with('groups')->findOrFail($request->segment(2));
+        $item = Item::with('groups')->findOrFail($request->segment(2),['id','title','position','description','content','image','url','status']);
         $groups = Group::where('module',$this->module.'-list')->get([
             'id',
             'title',

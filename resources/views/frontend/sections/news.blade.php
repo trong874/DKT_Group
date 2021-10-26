@@ -6,7 +6,7 @@
             <h2>Blog</h2>
             <p>{{__('Tin tức')}}</p>
         </header>
-        <div class="row recent-blog-posts-in" style="overflow: hidden;">
+        <div class="recent-blog-posts-in" style="overflow: hidden;">
             <div class="swiper-wrapper">
             @foreach($news as $item)
             <div class="col-lg-4 swiper-slide">

@@ -1513,14 +1513,16 @@ section {
     box-shadow: 0px 0 30px rgba(1, 41, 112, 0.08);
     transition: 0.3s;
     height: 100%;
-    min-height: 550px;
     overflow: hidden;
     padding: 30px;
     border-radius: 8px;
     position: relative;
     display: flex;
     flex-direction: column;
-    margin: 1em 1em;
+    margin: 0 1em;
+}
+.recent-blog-posts-in .swiper-slide{
+    height: auto;
 }
 
 .recent-blog-posts .post-box .post-img {

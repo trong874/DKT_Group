@@ -1,10 +1,10 @@
 @extends('layout.default')
 @section('content')
-    <form action="{{route("setting.update",'---')}}" method="POST">
+    <form action="{{route("setting.update",'-')}}" method="POST">
         @method('PUT')
         @csrf
     <div class="card card-custom">
-            <div class="card-header">
+        <div class="card-header">
                 <div class="card-title">
                     <h3 class="card-label">Cấu hình hệ thống</h3>
                 </div>

@@ -16,8 +16,10 @@
                     <a href="#" class="logo locale">
                         @if(Session::get('locale')=='vi')
                         <img src="{{asset('assets/img/flag/vietnam.png')}}" alt="">
-                        @else
+                        @elseif(Session::get('locale')=='en')
                             <img src="{{asset('assets/img/flag/usa.png')}}" alt="">
+                        @else
+                            <img src="{{asset('assets/img/flag/vietnam.png')}}" alt="">
                         @endif
                     </a>
                     <ul>

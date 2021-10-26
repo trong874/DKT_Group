@@ -8,7 +8,7 @@ return [
             'title' => 'Trang chủ',
             'root' => true,
             'icon' => 'media/svg/icons/Design/Layers.svg', // or can be 'flaticon-home' or any flaticon-*
-            'page' => '/',
+            'page' => '/admin',
             'new-tab' => false,
         ],
         // Custom

@@ -11,7 +11,7 @@
     <div class="sidebar-item categories">
         <ul>
             @foreach($categories_news as $category)
-            <li><a href="{{$category->url}}">{{$category->title}}</a></li>
+            <li><a href="{{$category->url}}">{{__($category->title)}}</a></li>
             @endforeach
         </ul>
     </div>
