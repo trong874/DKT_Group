@@ -27,6 +27,7 @@ class ItemController extends Controller
         return view('backend.items.list', compact('page_title', 'page_description', 'items', 'groups', 'module'));
     }
 
+
     public function showItemByGroup(Request $request)
     {
         $module = $this->module;
