@@ -58,8 +58,19 @@
                                 <option @if($item->position=='our_target_banner')selected @endif >our_target_banner</option>
                             </select>
                         @else
-                        <input type="text" name="position" id="position" class="form-control" placeholder="Position" value="{{$item->position??null}}" required/>
-                        @endif
+                            <select type="text" name="position" class="form-control" required>
+                                <option value="">--Vị trí--</option>
+                                <option @if($item->position=='my_service') @endif >my_service</option>
+                                <option  @if($item->position=='partner_banner') @endif >partner_banner</option>
+                                <option @if($item->position=='leadership_banner') @endif >leadership_banner</option>
+                                <option @if($item->position=='business_areas') @endif >business_areas</option>
+                                <option @if($item->position=='our_value_banner') @endif >our_value_banner</option>
+                                <option @if($item->position=='hero_banner') @endif >hero_banner</option>
+                                <option @if($item->position=='who_are_we_banner') @endif >who_are_we_banner</option>
+                                <option @if($item->position=='environment_banner') @endif >environment_banner</option>
+                                <option @if($item->position=='general_intro') @endif >general_intro</option>
+                                <option @if($item->position=='our_target_banner') @endif >our_target_banner</option>
+                            </select>                        @endif
                         <span class="form-text text-muted">Please enter your Position</span>
                     </div>
                 </div>
