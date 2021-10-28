@@ -36,7 +36,7 @@
                     <!-- Tabs -->
                     <ul class="nav nav-pills mb-3">
                         @foreach($general_intro_banner as $key => $item)
-                            @if($key == 3)
+                            @if($key == count($general_intro_banner) - 1)
                                 @continue
                             @endif
                             <li>
@@ -58,8 +58,12 @@
                 </div>
 
                 <div class="col-lg-6 image_general">
-                    <img src="{{$general_intro_banner[3]->image}}" class="img-fluid" alt=""
-                         style="width: 635px;height: 475px;object-fit: cover">
+                    @foreach($general_intro_banner as $key => $item)
+                        @if($item->title == 'general_intro ảnh')
+                            <img src="{{$item->image}}" class="img-fluid" alt=""
+                                 style="width: 635px;height: 475px;object-fit: cover">
+                        @endif
+                    @endforeach
                 </div>
 
             </div><!-- End Feature Tabs -->
@@ -99,7 +103,7 @@
     </div>
     <style>
         @media (max-width: 480px) {
-            #features .row{
+            #features .row {
                 --bs-gutter-x: 0 !important;
             }
         }

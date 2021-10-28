@@ -30,8 +30,9 @@
         <div class="dropdown">
             <div class="topbar-item" data-toggle="dropdown" data-offset="10px,0px">
                 <div class="btn btn-icon btn-clean btn-dropdown btn-lg mr-1">
-                    <img class="h-20px w-20px rounded-sm" src="@if (Session::get('locale') == 'vi'){{  asset('media/svg/flags/220-vietnam.svg') }}
-                                                                @else {{  asset('media/svg/flags/226-united-states.svg') }} "@endif" alt=""/>
+                    <img class="h-20px w-20px rounded-sm" src=" @if   (Session::get('locale') == 'vi'){{  asset('media/svg/flags/220-vietnam.svg') }}
+                                                                @elseif (Session::get('locale') == 'en'){{  asset('media/svg/flags/226-united-states.svg') }}
+                                                                @else {{  asset('media/svg/flags/220-vietnam.svg') }} "@endif" alt=""/>
                 </div>
             </div>
 
