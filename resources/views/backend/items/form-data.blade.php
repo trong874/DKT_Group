@@ -43,7 +43,7 @@
                     </div>
                     <label class="col-lg-1 col-form-label text-right">Position</label>
                     <div class="col-lg-3">
-                        @if($module == 'advertisement')
+                        @if($module == 'advertisement' && isset($item))
                             <select type="text" name="position" class="form-control" required>
                                 <option value="">--Vị trí--</option>
                                 <option @if($item->position=='my_service')selected @endif >my_service</option>
