@@ -58,6 +58,7 @@
                                 <option @if($item->position=='our_target_banner')selected @endif >our_target_banner</option>
                             </select>
                         @elseif($module == 'advertisement')
+                            <select type="text" name="position" class="form-control" required>
                             <option value="">--Vị trí--</option>
                             <option>my_service</option>
                             <option>partner_banner</option>
@@ -69,6 +70,7 @@
                             <option>environment_banner</option>
                             <option>general_intro</option>
                             <option>our_target_banner</option>
+                            </select>
                         @else
                         <input type="text" name="position" id="position" class="form-control" placeholder="Position" value="{{$item->position??null}}" required/>
                         @endif
