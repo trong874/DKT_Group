@@ -6,7 +6,9 @@ use App\Models\Group;
 use App\Models\Item;
 use Illuminate\Database\Query\Builder;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Redirect;
 use Symfony\Component\Console\Input\Input;
+use Illuminate\Support\Facades\Session;
 
 class ItemController extends Controller
 {
@@ -19,11 +21,14 @@ class ItemController extends Controller
 
     public function index()
     {
+
         $module = $this->module;
         $page_title = "$module management";
         $page_description = '';
         $groups = Group::where('module',$this->module.'-list')->get();
         $items = Item::with('user', 'groups')->where('module', $module)->paginate(10);
+        Session::put('task_url',request()->fullUrl());
+
         return view('backend.items.list', compact('page_title', 'page_description', 'items', 'groups', 'module'));
     }
 
@@ -78,7 +83,10 @@ class ItemController extends Controller
         $item = Item::find($request->segment(2));
         $item->groups()->sync($request->group_id);
         $item->update($request->all());
-        return redirect()->route($this->module . '.index');
+        if(session('task_url')){
+            return redirect(session('task_url'));
+        }
+
     }
 
     public function destroy(Request $request)
