@@ -13,7 +13,7 @@
                         <div class="col-lg-4 col-md-6 swiper-slide" data-aos="fade-up" data-aos-delay="{{$key *= 100}}">
                             <div class="service-box blue">
                                 <div class="box">
-                                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/f/ff/Facebook_logo_36x36.svg/2048px-Facebook_logo_36x36.svg.png"/>
+                                    <img src="{{$item->image}}"/>
                                     <h3>{{$item->title}}</h3>
                                     <p>{!! $item->description !!}</p>
                                     {{--                    <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>--}}
