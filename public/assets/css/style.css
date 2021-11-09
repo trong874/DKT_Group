@@ -780,7 +780,6 @@ section {
 
 .services .service-box .icon {
     font-size: 36px;
-    padding: 40px 20px;
     border-radius: 4px;
     position: relative;
     margin-bottom: 25px;
@@ -961,10 +960,6 @@ section {
     color: #bababa;
     font-size: 16px;
     font-weight: 300;
-}
-
-.pricing img {
-    padding: 30px 40px;
 }
 
 .pricing ul {
