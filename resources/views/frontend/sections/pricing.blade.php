@@ -23,15 +23,4 @@
         </div>
 
     </div>
-
-    <style>
-        .box > img {
-            width: 200px;
-            height: 150px;
-            object-fit: cover;
-        }
-        .root > div > .box {
-            height: 100%;
-        }
-    </style>
 </section>

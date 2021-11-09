@@ -13,7 +13,7 @@
                         <div class="col-lg-4 col-md-6 swiper-slide" data-aos="fade-up" data-aos-delay="{{$key *= 100}}">
                             <div class="service-box blue">
                                 <div class="box">
-                                    <i class="ri-discuss-line icon"></i>
+                                    <img src="{{$item->image}}"/>
                                     <h3>{{$item->title}}</h3>
                                     <p>{!! $item->description !!}</p>
                                     {{--                    <a href="#" class="read-more"><span>Read More</span> <i class="bi bi-arrow-right"></i></a>--}}
@@ -25,9 +25,15 @@
                 </div>
             </div>
 {{--        </div>--}}
-
-
-
-
     </div>
+    <style>
+        .box > img {
+            margin-bottom: 25px;
+            max-height: 100px;
+            object-fit: cover;
+        }
+        .root > div > .box {
+            height: 100%;
+        }
+    </style>
 </section>
