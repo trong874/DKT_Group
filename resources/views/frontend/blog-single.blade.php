@@ -16,18 +16,18 @@
             <div class="row">
                 <div class="col-lg-8 entries">
                     <article class="entry entry-single">
-                        <div class="entry-img">
-                            <img src="{{$news[0]->image}}" alt="" class="img-fluid">
-                        </div>
+
                         <h2 class="entry-title">
                             <a href="{{$news[0]->url}}">{{$news[0]->title}}</a>
                         </h2>
-
                         <div class="entry-meta">
                             <ul>
                                 <li class="d-flex align-items-center"><i class="bi bi-person"></i>{{$news[0]->user->name}}<a href="#"></a></li>
                                 <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2020-01-01">{{$news[0]->created_at}}</time></a></li>
                             </ul>
+                        </div>
+                        <div class="entry-img">
+                            <img src="{{$news[0]->image}}" alt="" class="img-fluid">
                         </div>
                         <div class="entry-content">
                             <p>{!! $news[0]->description !!}</p>
