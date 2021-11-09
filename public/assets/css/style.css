@@ -572,7 +572,7 @@ section {
 }
 
 /*--------------------------------------------------------------
-# Values
+# Values Items
 --------------------------------------------------------------*/
 .values .box {
     padding: 30px;
@@ -583,7 +583,6 @@ section {
 }
 
 .values .box img {
-
     transition: 0.5s;
     transform: scale(1.1);
 }
@@ -960,10 +959,6 @@ section {
     color: #bababa;
     font-size: 16px;
     font-weight: 300;
-}
-
-.pricing img {
-    padding: 30px 40px;
 }
 
 .pricing ul {
