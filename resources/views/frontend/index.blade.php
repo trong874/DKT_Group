@@ -58,7 +58,7 @@
         <!-- ======= Clients Section ======= -->
         @include('frontend.sections.partner')
         <!-- End Clients Section -->
-        <!-- ======= Recent Blog Posts Section ======= -->
+         <!-- ======= Recent Blog Posts Section ======= -->
         @include('frontend.sections.news')
         <!-- End Recent Blog Posts Section -->
         <!-- ======= Contact Section ======= -->
