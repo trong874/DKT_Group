@@ -14,7 +14,7 @@
                 <div class="box">
                     <h3 style="color: #07d5c0;">{{$item->title}}</h3>
 {{--                    <div class="price"><sup>$</sup>0<span> / mo</span></div>--}}
-                    <img src="{{$item->image}}" class="img-fluid" alt="{{$item->title}}">
+                    <img src="{{$item->image}}" style="padding:0px 0px" alt="{{$item->title}}">
                     <p>{!! $item->description !!}</p>
                 </div>
             </div>
