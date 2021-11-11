@@ -56,6 +56,7 @@
                                 <option @if($item->position=='environment_banner')selected @endif >environment_banner</option>
                                 <option @if($item->position=='general_intro')selected @endif >general_intro</option>
                                 <option @if($item->position=='our_target_banner')selected @endif >our_target_banner</option>
+                                <option @if($item->position=='the_number')selected @endif >the_number</option>
                             </select>
                         @elseif($module == 'advertisement')
                             <select type="text" name="position" class="form-control" required>
@@ -70,6 +71,7 @@
                             <option>environment_banner</option>
                             <option>general_intro</option>
                             <option>our_target_banner</option>
+                            <option>the_number</option>
                             </select>
                         @else
                         <input type="text" name="position" id="position" class="form-control" placeholder="Position" value="{{$item->position??null}}" required/>

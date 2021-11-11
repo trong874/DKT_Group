@@ -33,6 +33,8 @@ class PagesController extends Controller
 
         $my_service = $this->getMyService();
 
+        $the_number = $this->getTheNumber();
+
         $business_areas = $this->getBusinessAreas();
 
         $leadership_banner = $this->getLeaderShipBanner();
@@ -64,7 +66,9 @@ class PagesController extends Controller
 
             'partner_banner',
 
-            'our_value_banner'
+            'our_value_banner',
+
+            'the_number'
         ));
     }
 
@@ -219,6 +223,19 @@ class PagesController extends Controller
     {
         return Item::where('module','advertisement')
             ->where('position','leadership_banner')
+            ->where('status','1')
+            ->limit($limit)
+            ->get([
+                'title',
+                'image',
+                'description',
+                'content',
+            ]);
+    }
+    public function getTheNumber($limit = 4)
+    {
+        return Item::where('module','advertisement')
+            ->where('position','the_number')
             ->where('status','1')
             ->limit($limit)
             ->get([
