@@ -8,7 +8,7 @@
                     <h3>{{__('Chúng tôi là ai')}}</h3>
                     <h2>{!!$who_are_we_banner->title!!}
                     </h2>
-                    <p>{!!$who_are_we_banner->description!!}
+                    <p style="">{!!$who_are_we_banner->description!!}
                     </p>
                     <div class="text-center text-lg-start">
                         <a href="#" class="btn-read-more d-inline-flex align-items-center justify-content-center align-self-center">
