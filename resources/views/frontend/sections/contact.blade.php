@@ -36,7 +36,7 @@
                         <div class="info-box">
                             <i class="bi bi-clock"></i>
                             <h3>{{__('Mở cửa')}}</h3>
-                            <p>Thứ 2 - Thứ 6<br>8:00 - 18:00</p>
+                            <p>Thứ 2 - Thứ 7<br>8:00 - 17:30</p>
                         </div>
                     </div>
                 </div>
