@@ -17,7 +17,7 @@
                     </div>
                 </div>
                 <div class="col-lg-6 hero-img aos-init aos-animate" data-aos="zoom-out" data-aos-delay="200">
-                    <img src="{{$hero_banner->image}}" class="img-fluid" alt="">
+                    <img src="{{$hero_banner->image}}" class="img-fluid" alt="" style="max-height: 480px">
                 </div>
             </div>
         </div>
