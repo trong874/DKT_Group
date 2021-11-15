@@ -3,8 +3,8 @@
     <div class="container" data-aos="fade-up">
 
         <header class="section-header">
-            <h2>Blog</h2>
-            <p>{{__('Tin tức')}}</p>
+{{--            <h2>Hoạt động</h2>--}}
+            <p>{{__('Hoạt động')}}</p>
         </header>
         <div class="recent-blog-posts-in" style="overflow: hidden;">
             <div class="swiper-wrapper">

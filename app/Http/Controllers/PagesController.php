@@ -261,7 +261,7 @@ class PagesController extends Controller
 
     public function showNewsBySlug($slug)
     {
-        $page_title = 'Trang tin tức';
+        $page_title = 'Hoạt động nổi bật';
         $description =  Setting::where('name','description')->first('val')->val;
         $categories_news = Group::where('module','article-list')->get();
         $category = Group::with('item')->where('slug',$slug)->get();
@@ -272,7 +272,7 @@ class PagesController extends Controller
 
     public function showNews()
     {
-        $page_title = 'Trang tin tức';
+        $page_title = 'Hoạt động nổi bật';
         $news = $this->getNewsForBlog();
         $top_view = $this->getTopViewNews();
         $categories_news = Group::where('module','article-list')->get(['url','title']);
