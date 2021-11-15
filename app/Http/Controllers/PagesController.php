@@ -285,7 +285,7 @@ class PagesController extends Controller
         $categories_news = Group::where('module','article-list')->get(['url','title']);
         $news = Item::with('user')
             ->where('slug',$slug)
-            ->get([
+            ->first([
                 'id',
                 'image',
                 'title',

@@ -6,7 +6,7 @@
             <ol>
                 <li><a href="/">{{__('Trang chủ')}}</a></li>
                 <li><a href="/tin-tuc">{{__('Tin tức')}}</a></li>
-                <li><span>{{$news[0]->title}}</span></li>
+                <li><span>{{$news->title}}</span></li>
             </ol>
             <h2>{{__($page_title)??'DKT'}}</h2>
         </div>
@@ -17,23 +17,23 @@
                 <div class="col-lg-8 entries">
                     <article class="entry entry-single">
 {{--                        <div class="entry-img">--}}
-{{--                            <img src="{{$news[0]->image}}" alt="" class="img-fluid">--}}
+{{--                            <img src="{{$news->image}}" alt="" class="img-fluid">--}}
 {{--                        </div>--}}
                         <h2 class="entry-title">
-                            <a href="{{$news[0]->url}}">{{$news[0]->title}}</a>
+                            <a href="{{$news->url}}">{{$news->title}}</a>
                         </h2>
 
                         <div class="entry-meta">
                             <ul>
-                                <li class="d-flex align-items-center"><i class="bi bi-person"></i>{{$news[0]->user->name}}<a href="#"></a></li>
-                                <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2020-01-01">{{$news[0]->created_at}}</time></a></li>
+                                <li class="d-flex align-items-center"><i class="bi bi-person"></i>{{$news->user->name}}<a href="#"></a></li>
+                                <li class="d-flex align-items-center"><i class="bi bi-clock"></i> <a href="#"><time datetime="2020-01-01">{{$news->created_at}}</time></a></li>
                             </ul>
                         </div>
                         <div class="entry-content">
-                            <p>{!! $news[0]->description !!}</p>
+                            <p>{!! $news->description !!}</p>
                         </div>
-                        {!! $news[0]->content !!}
-                        <span><i class="bi bi-eye-fill"></i>View: {{$news[0]->totalviews}}</span>
+                        {!! $news->content !!}
+                        <span><i class="bi bi-eye-fill"></i>View: {{$news->totalviews}}</span>
                     </article>
                     <style>
                         article img {
@@ -60,7 +60,7 @@
         window.onload = function() {
             $.ajax({
                 method: "PUT",
-                url: "{{route('items.add-view',$news[0]->id)}}",
+                url: "{{route('items.add-view',$news->id)}}",
                 data: {
                     "_token": "{{ csrf_token() }}",
                 }
