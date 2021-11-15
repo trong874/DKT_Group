@@ -9,9 +9,10 @@
             <ul>
                 <li><a class="nav-link scrollto " href="/">{{__('Trang chủ')}}</a></li>
                 <li><a class="nav-link scrollto" href="#about">{{__('Về chúng tôi')}}</a></li>
-                <li><a class="nav-link scrollto" href="#services">{{__('Dịch vụ')}}</a></li>
-                <li><a class="nav-link scrollto" href="{{route('news.index')}}">Blog</a></li>
+                <li><a class="nav-link scrollto" href="#services">{{__('Dự án')}}</a></li>
+                <li><a class="nav-link scrollto" href="{{route('news.index')}}">{{__('Hoạt động')}}</a></li>
                 <li><a class="nav-link scrollto" href="#contact">{{__('Liên hệ')}}</a></li>
+                <li><a class="nav-link scrollto" href="#contact">{{__('Tuyển dụng')}}</a></li>
                 <li class="dropdown">
                     <a href="#" class="logo locale">
                         @if(Session::get('locale')=='vi')

@@ -50,7 +50,7 @@
 {{--      @include('frontend.sections.portfolio')--}}
         <!-- End Portfolio Section -->
         <!-- ======= Testimonials Section ======= -->
-      @include('frontend.sections.leadership')
+{{--      @include('frontend.sections.leadership')--}}
         <!-- End Testimonials Section -->
         <!-- ======= Team Section ======= -->
 {{--       @include('display.sections.team')--}}
