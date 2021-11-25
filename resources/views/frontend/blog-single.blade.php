@@ -32,14 +32,20 @@
                         <div class="entry-content">
                             <p>{!! $news->description !!}</p>
                         </div>
+                        <div class="content-blog">
                         {!! $news->content !!}
+                        </div>
                         <span>
                             <i class="bi bi-eye-fill"></i>View: {{$news->totalviews}}
                         </span>
                     </article>
                     <style>
-                        article img {
+                        .content-blog img{
                             max-height: 800px;
+                        }
+
+                        article img {
+                            max-width: 100%;
                         }
                         td {
                             border: 1px #ccc solid;
