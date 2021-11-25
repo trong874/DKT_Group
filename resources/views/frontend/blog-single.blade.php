@@ -38,12 +38,8 @@
                         </span>
                     </article>
                     <style>
-
-                        .entry-content image{
-                            max-height: 800px;
-                        }
                         article img {
-                            max-width: 100%;
+                            max-height: 800px;
                         }
                         td {
                             border: 1px #ccc solid;
