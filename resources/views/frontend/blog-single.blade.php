@@ -33,9 +33,15 @@
                             <p>{!! $news->description !!}</p>
                         </div>
                         {!! $news->content !!}
-                        <span><i class="bi bi-eye-fill"></i>View: {{$news->totalviews}}</span>
+                        <span>
+                            <i class="bi bi-eye-fill"></i>View: {{$news->totalviews}}
+                        </span>
                     </article>
                     <style>
+
+                        .entry-content image{
+                            max-height: 800px;
+                        }
                         article img {
                             max-width: 100%;
                         }
