@@ -42,6 +42,7 @@
                     <style>
                         .content-blog img{
                             max-width: 796px;
+                            height: fit-content !important;
                         }
 
                         article img {
