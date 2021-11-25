@@ -41,7 +41,7 @@
                     </article>
                     <style>
                         .content-blog img{
-                            max-height: 800px;
+                            max-width: 445px;
                         }
 
                         article img {
