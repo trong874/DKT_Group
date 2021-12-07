@@ -53,7 +53,9 @@ Route::group(['middleware'=>'language'],function (){
 
     Route::get('/tin-tuc',[PagesController::class,'showNews'])->name('news.index');
 
-    Route::get('/news/{slug}',[PagesController::class,'showDetailNews'])->name('news.detail');
+    Route::get('/{position}/{slug}',[PagesController::class,'showDetailNews'])->name('news.detail');
+
+    Route::get('/tuyen-dung',[PagesController::class,'showRecruitment'])->name('recruitment.index');
 
     Route::get('search/news',[PagesController::class,'filterNews'])->name('news.search');
 

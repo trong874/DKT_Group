@@ -47,7 +47,7 @@
                             <select type="text" name="position" class="form-control" required>
                                 <option value="">--Vị trí--</option>
                                 <option @if($item->position=='my_service')selected @endif >my_service</option>
-                                <option  @if($item->position=='partner_banner')selected @endif >partner_banner</option>
+                                <option @if($item->position=='partner_banner')selected @endif >partner_banner</option>
                                 <option @if($item->position=='leadership_banner')selected @endif >leadership_banner</option>
                                 <option @if($item->position=='business_areas')selected @endif >business_areas</option>
                                 <option @if($item->position=='our_value_banner')selected @endif >our_value_banner</option>
@@ -74,7 +74,12 @@
                             <option>the_number</option>
                             </select>
                         @else
-                        <input type="text" name="position" id="position" class="form-control" placeholder="Position" value="{{$item->position??null}}" required/>
+{{--                        <input type="text" name="position" id="position" class="form-control" placeholder="Position" value="{{$item->position??null}}" />--}}
+                            <select type="text" name="position" class="form-control" onkeyup="changeTitleToSlug()" required>
+                                <option value="">--Vị trí--</option>
+                                <option @if($item->position=='news')selected @endif >news</option>
+                                <option @if($item->position=='recuitment')selected @endif >recuitment</option>
+                            </select>
                         @endif
                         <span class="form-text text-muted">Please enter your Position</span>
                     </div>
@@ -259,7 +264,8 @@
             slug = slug.replace(/\@\-|\-\@|\@/gi, '');
             //In slug ra textbox có id “slug”
             document.getElementById('slug').value = slug;
-            document.getElementById('url').value  = "{{url('')}}/news/"+ slug;
+            let position = $('#position').val();
+            document.getElementById('url').value  = "{{url('')}}/"+position+"/"+ slug;
         }
     </script>
 @endsection

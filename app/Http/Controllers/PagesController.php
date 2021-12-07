@@ -279,12 +279,12 @@ class PagesController extends Controller
         return view('frontend.blog',$this->getConfigPage(),compact('news','page_title','top_view','categories_news'));
     }
 
-    public function showDetailNews($slug)
+    public function showDetailNews($position,$slug)
     {
         $page_title = 'Trang tin tức';
         $categories_news = Group::where('module','article-list')->get(['url','title']);
         $news = Item::with('user')
-            ->where('slug',$slug)
+            ->where('slug',$slug)->where('position',$position)
             ->first([
                 'id',
                 'image',
@@ -324,4 +324,29 @@ class PagesController extends Controller
         $items = Item::where('title','LIKE','%'.$request->get('query').'%')->get();
         return view('layout.partials.extras._quick_search_result',compact('items'));
     }
+
+    public function getRecuitmentForBlog()
+    {
+        return Item::with('user')
+            ->where('module','article')
+            ->where('position','recuitment')
+            ->where('status','1')
+            ->orderBy('created_at','ASC')
+            ->paginate(4,[
+                'author_id',
+                'title',
+                'image',
+                'url',
+                'description',
+                'created_at'
+            ]);
+    }
+
+    public function showRecruitment()
+    {
+        $page_title = 'Thông tin tuyển dụng';
+        $recuitment = $this->getRecuitmentForBlog();
+        $top_view = $this->getTopViewNews();
+        $categories_news = Group::where('module','article-list')->where('slug','tuyen-dung')->get(['url','title']);
+        return view('frontend.tuyendung',$this->getConfigPage(),compact('recuitment','top_view','page_title','categories_news'));    }
 }
