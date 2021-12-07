@@ -73,12 +73,18 @@
                             <option>our_target_banner</option>
                             <option>the_number</option>
                             </select>
-                        @else
+                        @elseif (isset($item))
 {{--                        <input type="text" name="position" id="position" class="form-control" placeholder="Position" value="{{$item->position??null}}" />--}}
                             <select type="text" name="position" class="form-control" onkeyup="changeTitleToSlug()" required>
                                 <option value="">--Vị trí--</option>
                                 <option @if($item->position=='news')selected @endif >news</option>
                                 <option @if($item->position=='recuitment')selected @endif >recuitment</option>
+                            </select>
+                        @else
+                            <select type="text" name="position" class="form-control" onkeyup="changeTitleToSlug()" required>
+                                <option value="">--Vị trí--</option>
+                                <option>news</option>
+                                <option>recuitment</option>
                             </select>
                         @endif
                         <span class="form-text text-muted">Please enter your Position</span>
