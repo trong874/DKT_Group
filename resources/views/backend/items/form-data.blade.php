@@ -22,7 +22,7 @@
                 <div class="form-group row mt-3">
                     <label class="col-lg-1 col-form-label text-right">Title</label>
                     <div class="col-lg-3">
-                        <input type="text" name="title" id="title" class="form-control" placeholder="Title" value="{{$item->title??null}}" onkeyup="changeTitleToSlug()" required/>
+                        <input type="text" name="title" id="title" class="form-control" placeholder="Title" value="{{$item->title??null}}" onchange="changeTitleToSlug()" required/>
                         <span class="form-text text-muted">Please enter your Title</span>
                     </div>
                     <input type="hidden" id="slug" name="slug" value="{{$item->slug??null}}">
@@ -75,13 +75,13 @@
                             </select>
                         @elseif (isset($item))
 {{--                        <input type="text" name="position" id="position" class="form-control" placeholder="Position" value="{{$item->position??null}}" />--}}
-                            <select type="text" name="position" class="form-control" onkeyup="changeTitleToSlug()" required>
+                            <select type="text" name="position" id="position" class="form-control" onchange="changeTitleToSlug()" required>
                                 <option value="">--Vị trí--</option>
-                                <option @if($item->position=='news')selected @endif >news</option>
-                                <option @if($item->position=='recuitment')selected @endif >recuitment</option>
+                                <option @if($item->position=='news')selected @endif value="news">Blog</option>
+                                <option @if($item->position=='recuitment')selected @endif value="recuitment">Tuyển dụng</option>
                             </select>
                         @else
-                            <select type="text" name="position" class="form-control" onkeyup="changeTitleToSlug()" required>
+                            <select type="text" name="position" id="position" class="form-control" onchange="changeTitleToSlug()" required>
                                 <option value="">--Vị trí--</option>
                                 <option>news</option>
                                 <option>recuitment</option>
