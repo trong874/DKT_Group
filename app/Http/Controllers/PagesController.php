@@ -215,7 +215,8 @@ class PagesController extends Controller
             ->get([
                 'title',
                 'image',
-                'created_at'
+                'created_at',
+                'url'
             ]);
     }
 
@@ -293,7 +294,8 @@ class PagesController extends Controller
                 'content',
                 'totalviews',
                 'author_id',
-                'created_at'
+                'created_at',
+                'url'
             ]);
         $top_view = $this->getTopViewNews();
         return view('frontend.blog-single',$this->getConfigPage(),compact('page_title','news','top_view','categories_news'));
