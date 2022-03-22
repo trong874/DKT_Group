@@ -6,12 +6,23 @@ use App\Http\Controllers\LanguageController;
 use App\Http\Controllers\PagesController;
 use App\Http\Controllers\SettingController;
 use App\Http\Controllers\UserController;
+use Illuminate\Support\Facades\Cache;
 use Illuminate\Support\Facades\Route;
 
 
 Route::group(['middleware'=>'language'],function (){
 
     Route::get('/', [PagesController::class, 'index']);
+
+    Route::get('/clear-cache',function(){
+
+        Cache::flush();
+        return json_encode([
+            'status'=>1,
+            'message'=>"Clear cache success"
+        ]);
+
+    });
 
     Route::get('/quick-search', [PagesController::class, 'quickSearch'])->name('quick-search');
 
