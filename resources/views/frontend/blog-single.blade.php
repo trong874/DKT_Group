@@ -16,13 +16,9 @@
             <div class="row">
                 <div class="col-lg-8 entries">
                     <article class="entry entry-single">
-{{--                        <div class="entry-img">--}}
-{{--                            <img src="{{$news->image}}" alt="" class="img-fluid">--}}
-{{--                        </div>--}}
                         <h2 class="entry-title">
                             <a href="{{$news->url}}">{{$news->title}}</a>
                         </h2>
-
                         <div class="entry-meta">
                             <ul>
                                 <li class="d-flex align-items-center"><i class="bi bi-person"></i>{{$news->user->name}}<a href="#"></a></li>
@@ -41,7 +37,6 @@
                     </article>
                     <style>
                         .content-blog img{
-                            max-width: 795px !important;
                             height: fit-content !important;
                         }
 
