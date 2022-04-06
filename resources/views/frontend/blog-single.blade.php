@@ -35,21 +35,6 @@
                             <i class="bi bi-eye-fill"></i>View: {{$news->totalviews}}
                         </span>
                     </article>
-                    <style>
-                        .content-blog img{
-                            height: fit-content !important;
-                        }
-
-                        article img {
-                            max-width: 100%;
-                        }
-                        td {
-                            border: 1px #ccc solid;
-                        }
-                        .entry.entry-single{
-                            min-height: 600px;
-                        }
-                    </style>
                 </div>
                 <!-- End blog entries list -->
                 <div class="col-lg-4">
@@ -60,6 +45,28 @@
             </div>
         </div>
     </section>
+    <style>
+        .content-blog img{
+            height: fit-content;
+        }
+
+        article img {
+            max-width: 100%;
+        }
+        td {
+            border: 1px #ccc solid;
+        }
+        .entry.entry-single{
+            min-height: 600px;
+        }
+
+        @media screen and (max-width: 960px) {
+            .content-blog img{
+                height: fit-content !important;
+            }
+
+        }
+    </style>
     <script>
         window.onload = function() {
             $.ajax({
