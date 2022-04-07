@@ -62,7 +62,7 @@
 
         @media screen and (max-width: 960px) {
             .content-blog img{
-                height: fit-content !important;
+                height: auto !important;
             }
 
         }
