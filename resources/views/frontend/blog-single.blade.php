@@ -47,7 +47,8 @@
     </section>
     <style>
         .content-blog img{
-            height: fit-content;
+            height: auto !important;
+            width: 100% !important;
         }
 
         article img {
